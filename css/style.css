@@ -44,6 +44,11 @@ body {
   box-shadow: 10px 5px 26px rgb(132, 134, 138);
 }
 
+.button-color,.button-color:hover, .button-color:focus{
+  background-color: #1b262c;
+  border-color: #1b262c;
+}
+
 .fa-instagram , .fa-github{
   padding-top: 0.5em;
   font-size: 1.5em;
