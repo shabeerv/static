@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- JS -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Portfolio - Home</title>
+</head>
+<body>    
+    <nav class="navbar navbar-expand-lg navbar-dark footer-color " style="position: fixed; width: 100%; z-index: 1;">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-code fa-1x pb-2 icon2-color"></i>
+            <h5 class="d-inline text-white">Portfolio</h5>
+            </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-white navigation-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white navigation-link" href="#services">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white navigation-link" href="#contactme">Contact</a>
+                </li>
+          </ul>
+        </div>
+    </nav>
+
+    <section id="home" style="padding-top: 10em; padding-bottom: 5em;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 personal-info">
+                    <img class="img-fluid rounded-circle profilepic" src="img/me2.JPG">
+                </div>
+                <div class="col-md-6 personal-info">
+                    <h2 class="text-secondary">Hello, I'm</h2>
+                    <h1 class="nametag" style = "color: #1b262c;" id="nametag"></h1>
+                    <h4 class="text-secondary">Full Stack Developer</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 card-shadow" id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center p-3 mt-2 card-shadow" style="background-color: #ece8d9;">
+                        <i class="fas fa-pencil-ruler display-1 icon-color"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Frontend Developer</h5>
+                          <p class="card-text" style="height: 10em;">Clean and Responsive Designs for Websites.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center p-3 mt-2 card-shadow" style="background-color: #ece8d9;">
+                        <i class="fas fa-cogs display-1 icon-color"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Backend Developer</h5>
+                          <p class="card-text" style="height: 10em;">Focuses on databases, scripting, and the architecture of websites.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card text-center p-3 mt-2 card-shadow" style="background-color: #ece8d9;">
+                        <i class="fas fa-mobile display-1 icon-color"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Mobile App Developer</h5>
+                          <p class="card-text" style="height: 10em;">Developing fully functional Apps.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 mt-5" style="background-color: #ece8d9;" id="contactme">
+        <div class="container">
+            <h1 class="text-center">Contact Me</h1>
+            <div class="row pt-3">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-row">
+                          <div class="form-group col-md-6">
+                              <label for="name">Name</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                          </div>
+                          <div class="form-group col-md-6">
+                              <label for="phone_number">Phone Number</label>
+                              <input type="tel" class="form-control" name="phone_number" id="phone_number" placeholder="Phone Number">
+                          </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-md-12">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="comment">Comment</label>
+                          <textarea name="comment" id="comment" cols="30" rows="10" class="form-control" placeholder="Tell me anything..."></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                        <button type="button" onclick="contactMe()" class="btn btn-primary text-center button-color" style="width: 100%;">Submit</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center" style="color: #e4e3e3;">
+                    <a href="https://instagram.com/shabeer98_/" target="__blank"><i class="fab fa-instagram"></i></a>
+                   <a href="https://github.com/shabeerv/" target="__blank"> <i class="fab fa-github"></i></a>
+                    <p>All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var x = 0;
+        var textEffect = "Muhammed Shabeer";
+        var container = document.getElementById('nametag');
+
+        function animate(){
+            if(x < textEffect.length){
+                container.innerHTML += textEffect.charAt(x);
+                x++;
+                setTimeout(animate, 80);
+            }
+        }
+        animate();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+  }
+
+.personal-info{
+  text-align: center;
+}
+
+.profilepic{
+  border: 2px solid #1b262c;
+  width: 90%;
+}
+
+.navigation-link {
+  border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #e4e3e3;
+  transition: 0.5s ease;
+}
+
+body {
+  background: #ece8d9;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.card, .form-control, .btn{
+  border-radius: 1rem;
+}
+
+.card:hover{
+  border: 1px solid #1b262c;
+  padding: 2em !important;
+  transition: 0.3s
+}
+
+.footer-color{
+  background-color:#1b262c;
+}
+
+.card-shadow{
+  box-shadow: 10px 5px 26px rgb(132, 134, 138);
+}
+
+.fa-instagram , .fa-github{
+  padding-top: 0.5em;
+  font-size: 1.5em;
+  color: #e4e3e3;
+}
+
+.icon2-color{
+  color: #e4e3e3;
+}
+
+.icon-color{
+  color: #1b262c;
+}
