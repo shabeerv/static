@@ -6,6 +6,6 @@ function contactMe() {
   
     var message = `Name: ${name}\nContact: ${phone_number}\nEmail: +${email}\nMessage: ${comment}`;
     message = encodeURI(message);
-    var query = `https://wa.me/918943506060?text=${message}`;
+    var query = `https://wa.me/{phonenumber}?text=${message}`;
     window.location.replace(query);
   }
